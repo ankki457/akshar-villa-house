@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+    <link rel="stylesheet" href="https://cdn.shopify.com/s/files/1/0771/2161/t/3/assets/jPages.min.js?10688064064350896456">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js">
+    <style>
+        .wrapper, .categories{
+  width: 900px;
+  margin: 0 auto;
+}
+.categories{
+  button{
+    width: 100px;
+    height: 30px;
+    float: left;
+    margin-left: 15px;
+    text-align: center;
+  }
+}
+.wrapper > div{
+  width: 200px;
+  height: 100px;
+  background: #f2f2f2;
+  float: left;
+  margin: 15px;
+  text-align: center;
+}
+.wrapper{
+  .blue-color{
+    background: blue;
+    color: #fff;
+  }
+  .green-color{
+    background: green;
+  }
+  .yellow-color{
+    background: yellow;
+  }
+}
+.pagination{
+  width: 900px;
+  margin: 0 auto;
+  a{
+    float: left;
+    list-style: none;
+    margin-left: 15px;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+.mix{
+	display: none;
+}
+a.jp-current{
+  color: red;
+}
+    </style> 
+    <title>Document</title>
+</head>
+<body>
+    <div id="categories" class="categories">
+        <button class="filter" data-filter="all">All</button>
+        <button class="filter blue" data-filter=".blue-color">Blue</button>
+        <button class="filter green" data-filter=".green-color">Green</button>
+        <button class="filter yellow" data-filter=".yellow-color">Yellow</button>
+      </div>
+      
+      <div style="clear: both"></div>
+      
+      <div class="wrapper" id="Container">
+        <div class="mix blue-color">A</div>
+        <div class="mix green-color">B</div>
+        <div class="mix yellow-color">C</div>
+        <div class="mix yellow-color">D</div>
+        <div class="mix blue-color">E</div>
+        <div class="mix yellow-color">F</div>
+        <div class="mix green-color">G</div>
+        <div class="mix yellow-color">H</div>
+        <div class="mix blue-color">I</div>
+        <div class="mix yellow-color">J</div>
+        <div class="mix green-color">K</div>
+        <div class="mix yellow-color">L</div>
+        <div class="mix yellow-color">M</div>
+        <div class="mix blue-color">N</div>
+        <div class="mix green-color">O</div>
+        <div class="mix yellow-color">P</div>
+        <div class="mix yellow-color">Q</div>
+        <div class="mix green-color">R</div>
+        <div class="mix blue-color">S</div>
+        <div class="mix yellow-color">T</div>
+        <div class="mix green-color">U</div>
+        <div class="mix green-color">V</div>
+        <div class="mix yellow-color">W</div>
+        <div class="mix blue-color">X</div>
+        <div class="mix yellow-color">Y</div>
+        <div class="mix yellow-color">Z</div>
+      
+        <div class="mix green-color">A</div>
+        <div class="mix yellow-color">B</div>
+        <div class="mix blue-color">C</div>
+        <div class="mix green-color">D</div>
+        <div class="mix green-color">E</div>
+        <div class="mix blue-color">F</div>
+      </div>
+      <div style="clear:both"></div>
+      
+      <div id="pagination" class="pagination"></div>
+
+
+
+      <script>
+        
+var pagination = $('.pagination');
+
+function setPagination(){
+	 pagination.jPages({
+     containerID: 'Container',
+     perPage: 6,
+     startPage: 1,
+     startRange: 1,
+     midRange: 3,
+     endRange: 1,
+     first: false,
+     last: false
+   });
+}
+
+function destroyPagination() {
+  pagination.jPages('destroy');
+};
+
+setPagination();
+
+$('#Container').mixItUp({
+  callbacks: {
+    onMixLoad: function(state,futureState ){
+      console.log('mix Loaded');
+      //setPagination();
+    },
+    onMixStart: function(state,futureState ){
+      destroyPagination();
+    },
+		onMixEnd: function(state, futureState){
+			console.log('mix End');
+      setPagination();
+		}
+	}
+});
+
+
+      </script>
+</body>
+</html>

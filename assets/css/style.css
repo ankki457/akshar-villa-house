@@ -1,0 +1,477 @@
+/* ------- Root -------- */
+* strong {
+    cursor: pointer;
+}
+
+* .section {
+    margin-top: 120px;
+}
+
+.buton-colors button:hover {
+    background-color: #f35525 !important;
+    border-color: #f35525 !important;
+}
+
+.buton-colors .active {
+    background: #f35525 !important;
+    border-color: #f35525 !important;
+}
+
+
+/* ------- sub nav -------- */
+.sub-header {
+    background-color: #fff;
+    padding: 10px 0px;
+    border-bottom: 1px solid #eee;
+}
+
+.sub-header li,
+.email {
+    font-size: 14px;
+    color: #7a7a7a;
+    display: flex;
+}
+
+.sub-header ul,
+.sub-header i {
+    font-size: 20px;
+    color: #f35525;
+    display: flex;
+}
+
+.social-icon i {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: #cdcdcd;
+    border-radius: 50%;
+    line-height: 30px;
+    color: #fff;
+    font-size: 14px;
+    transition: all .3s;
+}
+
+.social-icon li a {
+    transition: all .3s;
+}
+
+.social-icon li i:hover {
+    background-color: #f35525;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #f35525;
+}
+
+
+/* ------- main header -------- */
+.main-header {
+    position: relative;
+    background-color: #fff;
+    height: 100px;
+    z-index: 100;
+    -webkit-transition: all .5s ease 0s;
+    -moz-transition: all .5s ease 0s;
+    -o-transition: all .5s ease 0s;
+    transition: all .5s ease 0s;
+}
+
+.logo-img {
+    height: 3rem;
+}
+
+.visit-icon {
+    background-color: #f35525;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    margin-right: 10px;
+    border-radius: 50%;
+    margin-left: -1px;
+}
+
+/* -------- Banner -------- */
+.carousel-caption {
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.carousel-caption h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.canada {
+    color: #f35525;
+}
+
+.banner-text-heading {
+    background-color: #fff;
+    font-size: 16px;
+    padding: 6px 15px;
+    width: 10rem;
+}
+
+.banner-text h1 {
+    text-transform: uppercase;
+    text-align: left;
+    font-size: 5vw;
+    color: #fff;
+    margin-bottom: 0px;
+}
+
+.banner-text {
+    text-align: left !important;
+}
+
+/* ------------ Banner for Sub Pages ------------ */
+
+.contect-banner {
+    background-image: url(../images/page-heading-bg.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 110px 0px;
+    text-align: center;
+}
+
+.contact-banner-text span {
+    background-color: rgb(255, 255, 255);
+    color: rgb(30, 30, 30);
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 25px;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+.contact-banner-text h3 {
+    font-size: 48px;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+}
+
+/* ---------- Info ------- */
+.info {
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+    margin-left: 60px;
+}
+
+.info-text {
+    display: flex;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.116);
+    padding-bottom: 30px;
+}
+
+.info-text h4 {
+    margin-left: 20px;
+}
+
+/* ----------- Use full link ---------- */
+.link-1 {
+    background-color: #9e9c9c1f;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.103);
+    width: 100%;
+    border: 0;
+    color: orangered;
+    font-size: 20px;
+    padding: 14px 0;
+}
+
+.accordion-body {
+    background-color: #9e9c9c1f;
+}
+
+/* --------- Featured ------  */
+.featured-img {
+    position: relative;
+
+}
+
+.featured-icon img {
+    background-color: #f35525;
+}
+
+.featured-icon img {
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    transform: translate(10%, -10%);
+    border: 22px solid #f35525;
+    border-radius: 50%;
+}
+
+/* ----------- Video View ----------- */
+
+.video-view {
+    background-image: url(../images/video-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    height: 500px;
+}
+
+.video-content {
+    margin-top: -12rem;
+    position: relative;
+    z-index: 1;
+}
+
+.badge-video {
+    margin-top: 125px;
+}
+
+.video-frame {
+    position: relative;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+}
+
+.video-frame a {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-26px, -26px);
+    padding: 0 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 52px;
+    color: #f35525;
+    outline: 15px solid rgba(254, 84, 37, 0.473);
+    text-decoration: none;
+}
+
+.video-frame img {
+    border-radius: 10px;
+}
+
+.video-view-card {
+    background-color: #ffeee9;
+    border-radius: 10px;
+    width: 270px;
+    padding: 20px;
+    border: 0;
+}
+.video-view-card h2 {
+    font-size: 40px;
+    color: #f35525;
+}
+.below {
+    text-align: left;
+    font-size: 16px;
+    color: #1e1e1e;
+    line-height: 25px;
+}
+
+/* ----------- Best Deal -------- */
+.best-deal {
+    background-color: #fafafa;
+    padding-top: 100px;
+}
+.apartment-container span {
+    background-color: #f0b9a8;
+    border-radius: 5px;
+    padding: 5px 12px;
+    display: inline-block;
+}
+
+.best-nav li button{
+    padding: 10px !important;
+}
+
+.apartment-container p {
+    font-size: 14px;
+    line-height: 28px;
+    color: #4a4a4a;
+}
+
+/*-----------Property Cards ------- */
+.property-head {
+    font-size: 1rem;
+}
+
+.cards-property {
+    max-width: 1090px;
+}
+
+.cards-property-01 {
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    display: grid;
+}
+
+.cards-property button:hover {
+    border: 1px solid transparent;
+    background-color: #f35525;
+}
+
+.property-cards {
+    background-color: rgb(252, 189, 200);
+}
+
+.property-card {
+    color: #f35525;
+}
+.card-body {
+    background-color: #fafafa;
+}
+
+.property-border {
+    border: 15px solid #cdcdcd30;
+}
+
+.pagination {
+    display: inline-block;
+}
+
+.isotope-pager a ,.pagination a {
+    border: 2px solid transparent;
+    color: #fff;
+    background-color: black;
+    float: left;
+    padding: 1px 8px;
+    border-radius: 50px;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.isotope-pager a ,.pagination a.active {
+    background-color: #f35525;
+    color: white;
+    border-radius: 50px;
+}
+
+.isotope-pager a ,.pagination a:hover:not(.active) {
+    background-color: #f35525;
+    border-radius: 50px;
+}
+
+/* ----- Property pagination -------- */
+
+.isotope-pager {
+    display: inline-block;
+    margin: 30px auto;
+}
+/* ----------- Contact IN Home ------------- */
+.contact-section {
+    background-image: url(../images/contact-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    height: 550px;
+}
+
+.contact-map-form {
+    position: relative;
+    margin-top: -15rem;
+    z-index: 1;
+}
+
+.contact-heading {
+    margin-top: 100px;
+}
+
+/* ------------- Contact Us ------------ */
+
+.heading {
+    margin-bottom: 40px;
+    margin-right: 280px;
+}
+
+.heading h6 {
+    color: rgb(238, 98, 107);
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.heading h2 {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.phone,
+.email {
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 15px;
+    padding: 35px 30px;
+    background-color: rgb(255, 255, 255);
+    display: inline-block;
+    min-width: 360px;
+}
+
+.email img,
+.phone img {
+    float: left;
+    margin-right: 25px;
+}
+
+.email h6,
+.phone h6 {
+    font-weight: bold;
+    color: black;
+    text-align: start;
+}
+
+
+.contact-page,
+#contact-form {
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 15px;
+    padding: 30px 30px;
+    background-color: rgb(255, 255, 255);
+}
+
+.contact-page #contact-form input {
+    width: 100%;
+    height: 44px;
+    border-radius: 22px;
+    background-color: rgb(246, 246, 246);
+    border: none;
+    margin-bottom: 30px;
+    font-size: 14px;
+    padding: 0px 15px;
+}
+
+.contact-page #contact-form textarea {
+    width: 100%;
+    height: 130px;
+    max-height: 180px;
+    border-radius: 22px;
+    background-color: rgb(246, 246, 246);
+    border: none;
+    margin-bottom: 15px;
+    font-size: 14px;
+    padding: 15px;
+}
+
+.contact-page #contact-form button {
+    background-color: rgb(30, 30, 30);
+    height: 44px;
+    border-radius: 22px;
+    padding: 0px 20px;
+    color: rgb(255, 255, 255);
+    border: none;
+    font-size: 15px;
+    font-weight: 500;
+    transition: all 0.5s ease 0s;
+}
+
+/* -------- Footer --------- */
+.footer {
+    background-color: #1e1e1e;
+    color: white;
+    min-height: 100px;
+}
+
+.footer p {
+    text-align: center;
+    line-height: 100px;
+}
